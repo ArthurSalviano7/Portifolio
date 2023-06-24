@@ -11,7 +11,7 @@ const Technologies = () => {
 
     return (
         <div name="technologies" className="bg-[#0a244c] text-white">
-            <div className="font-bold px-5 py-5">
+            <div className="font-bold px-6 py-5">
                 <h1 className="text-4xl sm:text-5xl px-4">Technologies</h1>
                 <p className="py-2 px-4">These are the technologies I am currently using and studying: </p>
             </div>
