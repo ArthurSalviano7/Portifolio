@@ -6,14 +6,16 @@ import Github from "../assets/github.png";
 import HTML from "../assets/html.png";
 import react from "../assets/react.png";
 import Git from "../assets/git.png"
+import { useTranslation } from "react-i18next";
 
 const Technologies = () => {
-
+    const { t } = useTranslation();
+    
     return (
         <div name="technologies" className="bg-[#0a244c] text-white">
             <div className="font-bold px-6 py-5">
-                <h1 className="text-4xl sm:text-5xl px-4">Technologies</h1>
-                <p className="py-2 px-4">These are the technologies I am currently using and studying: </p>
+                <h1 className="text-4xl sm:text-5xl px-4">{t('technologies')}</h1>
+                <p className="py-2 px-4">{t('tech_section')}</p>
             </div>
 
             <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8 px-8">

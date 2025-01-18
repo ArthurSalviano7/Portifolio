@@ -2,17 +2,19 @@ import React from "react";
 import projeto1 from "../assets/projeto1.png";
 import projeto2 from "../assets/projeto2.png";
 import projeto3 from "../assets/projeto3.png";
+import { useTranslation } from "react-i18next";
 
 
 const Projects = () => {
+    const { t } = useTranslation();
 
     return (
 
-        <div name="Projects" className="w-full bg-[#0a244c] text-white">
+        <div name="Projects" id="projects" className="w-full bg-[#0a244c] text-white">
             <div className="p-4 flex flex-col justify-center w-full">
                 <div className="font-bold px-5 py-5">
-                    <h1 className="text-4xl sm:text-5xl px-4">Projects</h1>
-                    <p className="py-2 px-4">These are some of my recent projects: </p>
+                    <h1 className="text-4xl sm:text-5xl px-4">{t('projects')}</h1>
+                    <p className="py-2 px-4">{t('projects_section')} </p>
 
                     
                     <div className="flex flex-row gap-10">
